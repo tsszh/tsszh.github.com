@@ -1,0 +1,89 @@
+/* Circle Process Bar Theme */
+
+.circle-process-bar {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.circle-process-bar .ppc-percents span {
+	font-size: 1.5em;
+}
+
+.circle-process-bar .progress-pie-chart,
+.circle-process-bar .gt-50 .ppc-progress .ppc-progress-fill {
+	background-color: #E5E5E5;
+}
+
+.circle-process-bar .progress-pie-chart.gt-50,
+.circle-process-bar .ppc-progress .ppc-progress-fill {
+	background-color: rgba(0, 135, 224, 0.8);
+}
+
+.circle-process-bar .ppc-percents {
+	background: #fff;
+}
+
+.circle-process-bar .ppc-percents span {
+	color: rgba(0, 135, 224, 0.8);
+}
+
+/* Circle Process Bar Core */
+
+.circle-process-bar .progress-pie-chart {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
+.circle-process-bar .ppc-progress {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.circle-process-bar .ppc-progress .ppc-progress-fill {
+	position: absolute;
+	left: -100%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotate(60deg);
+	transform-origin: 100% 50%;
+}
+
+.circle-process-bar .gt-50 .ppc-progress {
+	left: 0;
+}
+
+.circle-process-bar .gt-50 .ppc-progress .ppc-progress-fill {
+	left: 100%;
+	transform-origin: 0 50%;
+}
+
+.circle-process-bar .ppc-percents {
+	position: absolute;
+	border-radius: 50%;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	display: table;
+}
+
+.circle-process-bar .ppc-percents span {
+	display: block;
+	font-weight: bold;
+}
+
+.circle-process-bar .pcc-percents-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
