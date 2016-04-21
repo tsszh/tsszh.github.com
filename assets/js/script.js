@@ -14,6 +14,9 @@
 					navbar.removeClass("in");
 				}
 			};
+		$("#my-navbar-cntl").click(function(){
+			navbar.toggleClass("in");
+		});
 		clearNavBar();
 		$(this).resize( clearNavBar );
 		navbar.click( clearNavBar );
